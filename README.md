@@ -1,5 +1,7 @@
 # Current trends in deep learning for land-use/land-cover image classification: An open-source benchmark arena
 ## Dataset splits
+
+## Multi-class datasets
 ### EuroSAT
 ### UC Merced
 ### RSSCN7
@@ -15,3 +17,5 @@
 ### Optimal31
 ### BCS
 ### So2Sat
+
+## Multi-label datasets
