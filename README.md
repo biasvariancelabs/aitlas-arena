@@ -54,7 +54,7 @@
 - <a href="#">train split</a>
 - <a href="#">validation split</a>
 - <a href="#">test split</a>
-### BCS
+### Brazilian Coffee Scenes
 - <a href="#">train split</a>
 - <a href="#">validation split</a>
 - <a href="#">test split</a>
