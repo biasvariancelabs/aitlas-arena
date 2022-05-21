@@ -3,6 +3,9 @@
 
 ## Multi-class datasets
 ### EuroSAT
+ - <a href="#">train split</a>
+- validation split
+- test split
 ### UC Merced
 ### RSSCN7
 ### WHU-RS19
