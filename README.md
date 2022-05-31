@@ -7,9 +7,9 @@
 - <a href="#">validation split</a>
 - <a href="#">test split</a>
 ### UC Merced
-- <a href="#">train split</a>
-- <a href="#">validation split</a>
-- <a href="#">test split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/ucmerced_train.csv">train split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/ucmerced_val.csv">validation split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/ucmerced_test.csv">test split</a>
 ### RSSCN7
 - <a href="#">train split</a>
 - <a href="#">validation split</a>
