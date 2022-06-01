@@ -65,30 +65,30 @@
 
 ## Multi-label datasets
 ### UC Merced multilabel
-- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_train.csv">train split</a>
-- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_val.csv">validation split</a>
-- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_test.csv">test split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/ucmercedmultilabel_train.csv">train split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/ucmercedmultilabel_val.csv">validation split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/ucmercedmultilabel_test.csv">test split</a>
 ### AID multilabel
-- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_train.csv">train split</a>
-- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_val.csv">validation split</a>
-- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_test.csv">test split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/aidmultilabel_train.csv">train split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/aidmultilabel_val.csv">validation split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/aidmultilabel_test.csv">test split</a>
 ### DFC15
-- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_train.csv">train split</a>
-- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_val.csv">validation split</a>
-- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_test.csv">test split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/dfc15_train.csv">train split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/dfc15_val.csv">validation split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/dfc15_test.csv">test split</a>
 ### Planet UAS
-- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_train.csv">train split</a>
-- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_val.csv">validation split</a>
-- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_test.csv">test split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/planetuas_train.csv">train split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/planetuas_val.csv">validation split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/planetuas_test.csv">test split</a>
 ### MLRSNet
-- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_train.csv">train split</a>
-- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_val.csv">validation split</a>
-- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_test.csv">test split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/mlrsnet_train.csv">train split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/mlrsnet_val.csv">validation split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/mlrsnet_test.csv">test split</a>
 ### BigEarthNet 43 labels
-- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_train.csv">train split</a>
-- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_val.csv">validation split</a>
-- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_test.csv">test split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bigearthnet_train.csv">train split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bigearthnet_val.csv">validation split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bigearthnet_test.csv">test split</a>
 ### BigEarthNet 19 labels
-- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_train.csv">train split</a>
-- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_val.csv">validation split</a>
-- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_test.csv">test split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bigearthnet_train.csv">train split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bigearthnet_val.csv">validation split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bigearthnet_test.csv">test split</a>
