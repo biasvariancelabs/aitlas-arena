@@ -64,3 +64,31 @@
 - <a href="https://dataserv.ub.tum.de/s/m1483140/download?path=%2F&files=testing.h5">test split</a>
 
 ## Multi-label datasets
+### UC Merced multilabel
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_train.csv">train split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_val.csv">validation split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_test.csv">test split</a>
+### AID multilabel
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_train.csv">train split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_val.csv">validation split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_test.csv">test split</a>
+### DFC15
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_train.csv">train split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_val.csv">validation split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_test.csv">test split</a>
+### Planet UAS
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_train.csv">train split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_val.csv">validation split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_test.csv">test split</a>
+### MLRSNet
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_train.csv">train split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_val.csv">validation split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_test.csv">test split</a>
+### BigEarthNet 43 labels
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_train.csv">train split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_val.csv">validation split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_test.csv">test split</a>
+### BigEarthNet 19 labels
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_train.csv">train split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_val.csv">validation split</a>
+- <a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bcs_test.csv">test split</a>
