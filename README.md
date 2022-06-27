@@ -1,4 +1,4 @@
-# Current trends in deep learning for land-use/land-cover image classification: An open-source benchmark arena
+# Current Trends in Deep Learning for EO image classification: An open-source benchmark arena
 ## Dataset splits
 
 ## Multi-class datasets
