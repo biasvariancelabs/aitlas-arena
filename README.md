@@ -1,6 +1,6 @@
 
 
-![logo](AiTALS_EOBench.png)
+![logo](media/AiTALS_EOBench.png)
 
 # AiTLAS: Benchmark Arena
 
