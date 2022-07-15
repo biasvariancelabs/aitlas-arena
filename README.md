@@ -47,7 +47,7 @@
 # Models
 
 Available **[here](https://drive.google.com/drive/folders/1lTnPsMyyLv9XoPu3cMmE_h6NPkj_WCH8?usp=sharing)**
-| **Model**      | **Dataset**      | **Task** | **From scratch**     | **Pretrained[ImageNet\-1K]** |
+| **Model**      | **Dataset**      | **Task** | **From scratch**     | **Pretrained [ImageNet\-1K]** |
 |----------------|------------------|----------|----------------------|-----------------------------|
 | AlexNet        | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:|
 |                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
@@ -71,7 +71,7 @@ Available **[here](https://drive.google.com/drive/folders/1lTnPsMyyLv9XoPu3cMmE_
 |                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|---|||||
+|:heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:|||||
 | VGG16          | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
@@ -94,7 +94,7 @@ Available **[here](https://drive.google.com/drive/folders/1lTnPsMyyLv9XoPu3cMmE_
 |                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|---|||||
+|:heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:|||||
 | ResNet50       | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
@@ -117,7 +117,7 @@ Available **[here](https://drive.google.com/drive/folders/1lTnPsMyyLv9XoPu3cMmE_
 |                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|---|||||
+|:heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:|||||
 | ResNet152      | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
@@ -140,7 +140,7 @@ Available **[here](https://drive.google.com/drive/folders/1lTnPsMyyLv9XoPu3cMmE_
 |                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|---|||||
+|:heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:|||||
 | DenseNet161    | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
@@ -163,7 +163,7 @@ Available **[here](https://drive.google.com/drive/folders/1lTnPsMyyLv9XoPu3cMmE_
 |                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|---|||||
+|:heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:|||||
 | EfficientNetB0 | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
@@ -186,7 +186,7 @@ Available **[here](https://drive.google.com/drive/folders/1lTnPsMyyLv9XoPu3cMmE_
 |                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|---|||||
+|:heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:|||||
 | Vision Transformer (ViT base)           | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
@@ -209,7 +209,7 @@ Available **[here](https://drive.google.com/drive/folders/1lTnPsMyyLv9XoPu3cMmE_
 |                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|---|||||
+|:heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:|||||
 | MLP Mixer       | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
@@ -232,7 +232,7 @@ Available **[here](https://drive.google.com/drive/folders/1lTnPsMyyLv9XoPu3cMmE_
 |                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|---|||||
+|:heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:|||||
 | ConvNeXt_tiny       | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
 |                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
