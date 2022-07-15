@@ -4,10 +4,23 @@
 
 # AiTLAS: Benchmark Arena
 
-
 *AiTLAS: Benchmark Arena* is an open-source benchmark framework for evaluating state-of-the-art deep learning approaches on Earth Observation (EO) image classification tasks. To this end, we present extensive comparative analyses of more than 400 models that stem from nine different state-of-the-art architectures, comparing them on a variety of multi-class and multi-label classification tasks from 22 datasets with different sizes and properties. We benchmark models trained from scratch as well as in the context of transfer learning, leveraging pre-trained model variants, as it is typically performed in practice. All of the presented approaches are general and readily extendable to many other remote-sensing image classification tasks, not included in this study. To ensure reproducibility as well as to facilitate better usability and further developments, here we provide **all experimental details** including the trained models, model configuration and other dataset details used for for this study.
 
 *AiTLAS: Benchmark Arena* is part of the [**AiTLAS**](https://github.com/biasvariancelabs/aitlas) ecosystem, an open-source library for exploratory and predictive analysis of satellite imaginary pertaining to different remote-sensing tasks. 
+
+
+
+# Citation
+For attribution in academic contexts, please cite this **[work]()** as
+```
+@article{aitlas_arena2022,
+      title={{Current Trends in Deep Learning for Earth Observation:An Open-source Benchmark Arena for Image Classification}}, 
+      author={Ivica Dimitrovski and Ivan Kitanovski and Dragi Kocev and Nikola Simidjievski},
+      year={2022},
+      journal={arXiv preprint arXiv:},
+}
+```
+
 
 # Datasets
 ### Multi-class datasets
