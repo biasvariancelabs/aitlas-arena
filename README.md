@@ -45,8 +45,9 @@
 
 # Models
 
-Available **[here](https://drive.google.com/drive/folders/1lTnPsMyyLv9XoPu3cMmE_h6NPkj_WCH8?usp=sharing)**
+All trained models are available **[here](https://drive.google.com/drive/folders/1lTnPsMyyLv9XoPu3cMmE_h6NPkj_WCH8?usp=sharing)**
 
+## Model list 
 ### Multi-class classification tasks
 
 | Dataset        | Model          | from scratch         | pretrained [ImageNet1K] |
