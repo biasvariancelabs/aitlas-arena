@@ -42,6 +42,216 @@
 |BigEarthNet 19|[url](http://bigearth.net/)|<a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bigearthnet_train.csv">train</a>|<a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bigearthnet_val.csv">validation</a>|<a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bigearthnet_test.csv">test</a>|
 |BigEarthNet 43|[url](http://bigearth.net/)|<a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bigearthnet_train.csv">train</a>|<a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bigearthnet_val.csv">validation</a>|<a href="https://github.com/biasvariancelabs/LULC/blob/main/splits/bigearthnet_test.csv">test</a>|
 
+
+
 # Models
 
 Available **[here](https://drive.google.com/drive/folders/1lTnPsMyyLv9XoPu3cMmE_h6NPkj_WCH8?usp=sharing)**
+| **Model**      | **Dataset**      | **Task** | **From scratch**     | **Pretrained[ImageNet\-1K]** |
+|----------------|------------------|----------|----------------------|-----------------------------|
+| AlexNet        | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:|
+|                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | Eurosat          | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | Optimal31        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | PatternNet       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RESISC45         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSD46\-WHU       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSI\-CB256       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSSCN7           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | SAT6             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | SIRI\-WHU        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | So2Sat           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | UCMerced         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | WHU\-RS19        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | AID \(mlc\)      | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BigEarthNet19    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BigEarthNet43    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | DFC15            | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|---|||||
+| VGG16          | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | Eurosat          | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | Optimal31        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | PatternNet       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RESISC45         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSD46\-WHU       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSI\-CB256       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSSCN7           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | SAT6             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | SIRI\-WHU        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | So2Sat           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | UCMerced         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | WHU\-RS19        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | AID \(mlc\)      | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BigEarthNet19    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BigEarthNet43    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | DFC15            | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|---|||||
+| ResNet50       | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | Eurosat          | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | Optimal31        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | PatternNet       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RESISC45         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSD46\-WHU       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSI\-CB256       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSSCN7           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | SAT6             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | SIRI\-WHU        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | So2Sat           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | UCMerced         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | WHU\-RS19        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | AID \(mlc\)      | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BigEarthNet19    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BigEarthNet43    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | DFC15            | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|---|||||
+| ResNet152      | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | Eurosat          | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | Optimal31        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | PatternNet       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RESISC45         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSD46\-WHU       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSI\-CB256       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSSCN7           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | SAT6             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | SIRI\-WHU        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | So2Sat           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | UCMerced         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | WHU\-RS19        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | AID \(mlc\)      | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BigEarthNet19    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BigEarthNet43    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | DFC15            | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|---|||||
+| DenseNet161    | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | Eurosat          | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | Optimal31        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | PatternNet       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RESISC45         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSD46\-WHU       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSI\-CB256       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSSCN7           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | SAT6             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | SIRI\-WHU        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | So2Sat           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | UCMerced         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | WHU\-RS19        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | AID \(mlc\)      | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BigEarthNet19    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BigEarthNet43    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | DFC15            | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|---|||||
+| EfficientNetB0 | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | Eurosat          | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | Optimal31        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | PatternNet       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RESISC45         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSD46\-WHU       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSI\-CB256       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSSCN7           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | SAT6             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | SIRI\-WHU        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | So2Sat           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | UCMerced         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | WHU\-RS19        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | AID \(mlc\)      | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BigEarthNet19    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BigEarthNet43    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | DFC15            | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|---|||||
+| Vision Transformer (ViT base)           | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | Eurosat          | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | Optimal31        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | PatternNet       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RESISC45         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSD46\-WHU       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSI\-CB256       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSSCN7           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | SAT6             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | SIRI\-WHU        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | So2Sat           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | UCMerced         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | WHU\-RS19        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | AID \(mlc\)      | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BigEarthNet19    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BigEarthNet43    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | DFC15            | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|---|||||
+| MLP Mixer       | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | Eurosat          | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | Optimal31        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | PatternNet       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RESISC45         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSD46\-WHU       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSI\-CB256       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSSCN7           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | SAT6             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | SIRI\-WHU        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | So2Sat           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | UCMerced         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | WHU\-RS19        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | AID \(mlc\)      | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BigEarthNet19    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BigEarthNet43    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | DFC15            | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|---|||||
+| ConvNeXt_tiny       | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | Eurosat          | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | Optimal31        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | PatternNet       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RESISC45         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSD46\-WHU       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSI\-CB256       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | RSSCN7           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | SAT6             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | SIRI\-WHU        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | So2Sat           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | UCMerced         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | WHU\-RS19        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | AID \(mlc\)      | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BigEarthNet19    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | BigEarthNet43    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | DFC15            | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+|                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
