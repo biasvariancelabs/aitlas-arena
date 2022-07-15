@@ -10,7 +10,6 @@
 *AiTLAS: Benchmark Arena* is part of the [**AiTLAS**](https://github.com/biasvariancelabs/aitlas) ecosystem, an open-source library for exploratory and predictive analysis of satellite imaginary pertaining to different remote-sensing tasks. 
 
 # Datasets
-# Datasets
 ### Multi-class datasets
 |Dataset| Data source | Data Splits |||
 |---|---|---|---|---|
@@ -47,211 +46,213 @@
 # Models
 
 Available **[here](https://drive.google.com/drive/folders/1lTnPsMyyLv9XoPu3cMmE_h6NPkj_WCH8?usp=sharing)**
-| **Model**      | **Dataset**      | **Task** | **From scratch**     | **Pretrained [ImageNet\-1K]** |
-|----------------|------------------|----------|----------------------|-----------------------------|
-| AlexNet        | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:|
-|                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | Eurosat          | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | Optimal31        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | PatternNet       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RESISC45         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSD46\-WHU       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSI\-CB256       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSSCN7           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | SAT6             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | SIRI\-WHU        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | So2Sat           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | UCMerced         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | WHU\-RS19        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | AID \(mlc\)      | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BigEarthNet19    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BigEarthNet43    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | DFC15            | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|:heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:|||||
-| VGG16          | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | Eurosat          | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | Optimal31        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | PatternNet       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RESISC45         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSD46\-WHU       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSI\-CB256       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSSCN7           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | SAT6             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | SIRI\-WHU        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | So2Sat           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | UCMerced         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | WHU\-RS19        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | AID \(mlc\)      | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BigEarthNet19    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BigEarthNet43    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | DFC15            | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|:heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:|||||
-| ResNet50       | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | Eurosat          | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | Optimal31        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | PatternNet       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RESISC45         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSD46\-WHU       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSI\-CB256       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSSCN7           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | SAT6             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | SIRI\-WHU        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | So2Sat           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | UCMerced         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | WHU\-RS19        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | AID \(mlc\)      | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BigEarthNet19    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BigEarthNet43    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | DFC15            | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|:heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:|||||
-| ResNet152      | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | Eurosat          | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | Optimal31        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | PatternNet       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RESISC45         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSD46\-WHU       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSI\-CB256       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSSCN7           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | SAT6             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | SIRI\-WHU        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | So2Sat           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | UCMerced         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | WHU\-RS19        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | AID \(mlc\)      | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BigEarthNet19    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BigEarthNet43    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | DFC15            | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|:heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:|||||
-| DenseNet161    | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | Eurosat          | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | Optimal31        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | PatternNet       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RESISC45         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSD46\-WHU       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSI\-CB256       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSSCN7           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | SAT6             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | SIRI\-WHU        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | So2Sat           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | UCMerced         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | WHU\-RS19        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | AID \(mlc\)      | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BigEarthNet19    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BigEarthNet43    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | DFC15            | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|:heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:|||||
-| EfficientNetB0 | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | Eurosat          | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | Optimal31        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | PatternNet       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RESISC45         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSD46\-WHU       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSI\-CB256       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSSCN7           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | SAT6             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | SIRI\-WHU        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | So2Sat           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | UCMerced         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | WHU\-RS19        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | AID \(mlc\)      | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BigEarthNet19    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BigEarthNet43    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | DFC15            | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|:heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:|||||
-| Vision Transformer (ViT base)           | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | Eurosat          | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | Optimal31        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | PatternNet       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RESISC45         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSD46\-WHU       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSI\-CB256       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSSCN7           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | SAT6             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | SIRI\-WHU        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | So2Sat           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | UCMerced         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | WHU\-RS19        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | AID \(mlc\)      | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BigEarthNet19    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BigEarthNet43    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | DFC15            | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|:heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:|||||
-| MLP Mixer       | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | Eurosat          | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | Optimal31        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | PatternNet       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RESISC45         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSD46\-WHU       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSI\-CB256       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSSCN7           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | SAT6             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | SIRI\-WHU        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | So2Sat           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | UCMerced         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | WHU\-RS19        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | AID \(mlc\)      | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BigEarthNet19    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BigEarthNet43    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | DFC15            | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|:heavy_minus_sign::heavy_minus_sign::heavy_minus_sign:|||||
-| ConvNeXt_tiny       | AID              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BCS              | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | CLRS             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | Eurosat          | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | Optimal31        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | PatternNet       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RESISC45         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSD46\-WHU       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSI\-CB256       | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | RSSCN7           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | SAT6             | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | SIRI\-WHU        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | So2Sat           | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | UCMerced         | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | WHU\-RS19        | Multi-class classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | AID \(mlc\)      | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BigEarthNet19    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | BigEarthNet43    | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | DFC15            | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | MLRSNet          | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | PlanetUAS        | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
-|                | UCMerced \(mlc\) | Multi-label classification      | :heavy\_check\_mark: | :heavy\_check\_mark:        |
+
+### Multi-class classification tasks
+
+| Dataset        | Model          | from scratch         | pretrained [ImageNet1K] |
+|----------------|----------------|----------------------|-------------------------|
+| AID            | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| BCS            | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| CLRS           | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| Eurosat        | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| Optimal31      | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| PatternNet     | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| RESISC45       | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| RSD46-WHU      | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| RSI-CB256      | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| RSSCN7         | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| SAT6           | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| SIRI-WHU       | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| So2Sat         | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| UCMerced       | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| WHU-RS19       | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+
+
+
+### Multi-label classification tasks
+
+| Dataset        | Model          | from scratch         | pretrained [ImageNet1K] |
+|----------------|----------------|----------------------|-------------------------|
+| AID (mlc)      | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| BigEarthNet19  | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| BigEarthNet43  | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| DFC15          | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| MLRSNet        | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| PlanetUAS      | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| UCMerced (mlc) | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
