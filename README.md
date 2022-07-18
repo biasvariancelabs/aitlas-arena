@@ -11,7 +11,7 @@ We present **AiTLAS: Benchmark Arena** -- an open-source benchmark framework for
 
 
 # Citation
-For attribution in academic contexts, please cite this **[work]()** as
+For attribution in academic contexts, please cite this **[work](https://arxiv.org/abs/2207.07189)** as
 ```
 @article{aitlas_arena2022,
       title={{Current Trends in Deep Learning for Earth Observation:An Open-source Benchmark Arena for Image Classification}}, 
