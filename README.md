@@ -23,6 +23,9 @@ For attribution in academic contexts, please cite this **[work](https://arxiv.or
 
 
 # Datasets
+
+You can obtain each dataset (with the respective splits) on the links below. If you use these datasets please cite the original authors accordingly. The references are provided in Tables 1 and 2 in our **[paper](https://arxiv.org/abs/2207.07189)**. You can find more details about each dataset in the supplementary material of the paper as well as on our [AiTLAS Semantic Data Catalog](http://eodata.bvlabs.ai/).
+
 ### Multi-class datasets
 |Dataset| Data source | Data Splits |||
 |---|---|---|---|---|
@@ -94,7 +97,7 @@ For attribution in academic contexts, please cite this **[work](https://arxiv.or
 
 # Models
 
-All trained models are available **[here](https://drive.google.com/drive/folders/1lTnPsMyyLv9XoPu3cMmE_h6NPkj_WCH8?usp=sharing)**
+All trained models are available **[here](https://drive.google.com/drive/folders/1lTnPsMyyLv9XoPu3cMmE_h6NPkj_WCH8?usp=sharing)**.
 
 ## Model list 
 
