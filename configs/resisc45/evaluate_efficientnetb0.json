@@ -1,0 +1,26 @@
+{
+    "model": {
+        "classname": "aitlas.models.EfficientNetB0",
+        "config": {
+            "num_classes": 45,            
+            "metrics": ["accuracy", "precision", "recall", "f1_score"]
+        }
+    },
+    "task": {
+        "classname": "aitlas.tasks.EvaluateTask",
+        "config": {
+            "model_path": "./data/experiments/resisc45/efficientnetb0/checkpoint.pth.tar",
+            "dataset_config": {
+                "classname": "aitlas.datasets.Resisc45Dataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": false,
+                    "num_workers": 4,
+                    "data_dir": "./data/multi-class/RESISC45",
+                    "csv_file": "./data/multi-class/RESISC45/test.csv",
+                    "transforms": ["aitlas.transforms.ResizeCenterCropToTensor"]
+                }
+            }
+        }
+    }
+}
