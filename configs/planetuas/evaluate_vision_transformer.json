@@ -1,0 +1,27 @@
+{
+    "model": {
+        "classname": "aitlas.models.VisionTransformerMultilabel",
+        "config": {
+            "num_classes": 17,            
+			"threshold": 0.5,            
+            "metrics": ["precision", "recall", "f1_score", "map"]
+        }
+    },
+    "task": {
+        "classname": "aitlas.tasks.EvaluateTask",
+        "config": {
+            "model_path": "./data/experiments/planetuas/vision_transformer/checkpoint.pth.tar",
+            "dataset_config": {
+                "classname": "aitlas.datasets.PlanetUASMultiLabelDataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": false,
+                    "num_workers": 4,
+                    "data_dir": "./data/PlanetUAS/images",
+                    "csv_file": "./data/PlanetUAS/test.csv",
+                    "transforms": ["aitlas.transforms.ResizeCenterCropToTensor"]
+                }
+            }
+        }
+    }
+}
