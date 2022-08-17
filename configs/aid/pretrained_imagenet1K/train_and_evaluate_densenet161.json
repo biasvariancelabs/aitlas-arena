@@ -1,0 +1,42 @@
+{
+    "model": {
+        "classname": "aitlas.models.DenseNet161",
+        "config": {
+            "num_classes": 30,
+            "learning_rate": 0.0001,
+            "pretrained": true,
+            "metrics": ["accuracy", "precision", "recall", "f1_score"]
+        }
+    },
+    "task": {
+        "classname": "aitlas.tasks.TrainAndEvaluateTask",
+        "config": {
+            "epochs": 100,
+            "model_directory": "./data/experiments/aid/pretrained",
+            "save_epochs": 50,
+            "id": "densenet161",
+            "train_dataset_config": {
+                "classname": "aitlas.datasets.AIDDataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": true,
+                    "num_workers": 4,
+                    "data_dir": "./data/multi-class/AID",
+                    "csv_file": "./data/multi-class/AID/train.csv",
+					"transforms": ["aitlas.transforms.ResizeRandomCropFlipHVToTensor"]
+                }
+            },
+			"val_dataset_config": {
+                "classname": "aitlas.datasets.AIDDataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": false,
+                    "num_workers": 4,
+                    "data_dir": "./data/multi-class/AID",
+                    "csv_file": "./data/multi-class/AID/val.csv",
+                    "transforms": ["aitlas.transforms.ResizeCenterCropToTensor"]
+                }
+            }
+        }
+    }
+}
