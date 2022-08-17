@@ -1,0 +1,43 @@
+{
+    "model": {
+        "classname": "aitlas.models.ResNet152MultiLabel",
+        "config": {
+            "num_classes": 17,
+            "learning_rate": 0.0001,
+            "pretrained": true,
+            "threshold": 0.5,
+            "metrics": ["accuracy", "precision", "recall", "f1_score", "map"]
+        }
+    },
+    "task": {
+        "classname": "aitlas.tasks.TrainAndEvaluateTask",
+        "config": {
+            "epochs": 100,
+            "model_directory": "./data/experiments/ucmerced_multilabel/pretrained",
+            "save_epochs": 50,
+            "id": "resnet152",
+            "train_dataset_config": {
+                "classname": "aitlas.datasets.UcMercedMultiLabelDataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": true,
+                    "num_workers": 4,
+                    "data_dir": "./data/UCMerced_multilabel/images",
+                    "csv_file": "./data/UCMerced_multilabel/train.csv",
+					"transforms": ["aitlas.transforms.ResizeRandomCropFlipHVToTensor"]
+                }
+            },
+			"val_dataset_config": {
+                "classname": "aitlas.datasets.UcMercedMultiLabelDataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": false,
+                    "num_workers": 4,
+                    "data_dir": "./data/UCMerced_multilabel/images",
+                    "csv_file": "./data/UCMerced_multilabel/val.csv",
+                    "transforms": ["aitlas.transforms.ResizeCenterCropToTensor"]
+                }
+            }
+        }
+    }
+}
