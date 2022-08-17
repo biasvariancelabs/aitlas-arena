@@ -1,0 +1,27 @@
+{
+    "model": {
+        "classname": "aitlas.models.ResNet50MultiLabel",
+        "config": {
+            "num_classes": 17,       
+            "threshold": 0.5,				
+            "metrics": ["precision", "recall", "f1_score", "map"]
+        }
+    },
+    "task": {
+        "classname": "aitlas.tasks.EvaluateTask",
+        "config": {
+            "model_path": "./data/experiments/aid_multilabel/resnet50/checkpoint.pth.tar",
+            "dataset_config": {
+                "classname": "aitlas.datasets.AIDMultiLabelDataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": false,
+                    "num_workers": 4,
+                    "data_dir": "./data/AID_multilabel/test/images",
+                    "csv_file": "./data/AID_multilabel/test.csv",
+                    "transforms": ["aitlas.transforms.ResizeCenterCropToTensor"]
+                }
+            }
+        }
+    }
+}
