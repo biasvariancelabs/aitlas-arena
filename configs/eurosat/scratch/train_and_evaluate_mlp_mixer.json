@@ -1,0 +1,42 @@
+{
+    "model": {
+        "classname": "aitlas.models.MLPMixer",
+        "config": {
+            "num_classes": 10,
+            "learning_rate": 0.001,
+            "pretrained": false,
+            "metrics": ["accuracy", "precision", "recall", "f1_score"]
+        }
+    },
+    "task": {
+        "classname": "aitlas.tasks.TrainAndEvaluateTask",
+        "config": {
+            "epochs": 100,
+            "model_directory": "./data/experiments/eurosat/scratch",
+            "save_epochs": 50,
+            "id": "mlp_mixer",
+            "train_dataset_config": {
+                "classname": "aitlas.datasets.EurosatDataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": true,
+                    "num_workers": 4,
+                    "data_dir": "./data/multi-class/EuroSAT",
+                    "csv_file": "./data/multi-class/EuroSAT/train.csv",
+					"transforms": ["aitlas.transforms.ResizeRandomCropFlipHVToTensor"]
+                }
+            },
+			"val_dataset_config": {
+                "classname": "aitlas.datasets.EurosatDataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": false,
+                    "num_workers": 4,
+                    "data_dir": "./data/multi-class/EuroSAT",
+                    "csv_file": "./data/multi-class/EuroSAT/val.csv",
+                    "transforms": ["aitlas.transforms.ResizeCenterCropToTensor"]
+                }
+            }
+        }
+    }
+}
