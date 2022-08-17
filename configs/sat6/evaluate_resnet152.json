@@ -1,0 +1,26 @@
+{
+    "model": {
+        "classname": "aitlas.models.ResNet152",
+        "config": {
+            "num_classes": 6,            
+            "metrics": ["accuracy", "precision", "recall", "f1_score"]
+        }
+    },
+    "task": {
+        "classname": "aitlas.tasks.EvaluateTask",
+        "config": {
+            "model_path": "./data/experiments/sat6/resnet152/checkpoint.pth.tar",
+            "dataset_config": {
+                "classname": "aitlas.datasets.SAT6Dataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": false,
+                    "num_workers": 4,
+                    "mat_file": "./data/multi-class/SAT/sat-6-full.mat",
+                    "mode": "test",
+                    "transforms": ["aitlas.transforms.ResizeCenterCropToTensor"]
+                }
+            }
+        }
+    }
+}

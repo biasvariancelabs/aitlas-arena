@@ -1,0 +1,46 @@
+{
+    "model": {
+        "classname": "aitlas.models.VGG16",
+        "config": {
+            "num_classes": 6,
+            "learning_rate": 0.0001,
+            "pretrained": true,
+            "metrics": ["accuracy", "precision", "recall", "f1_score"]
+        }
+    },
+    "task": {
+        "classname": "aitlas.tasks.TrainAndEvaluateTask",
+        "config": {
+            "epochs": 100,
+            "model_directory": "./data/experiments/sat6/pretrained",
+            "save_epochs": 50,
+            "id": "vgg16",
+            "train_dataset_config":{
+                "classname": "aitlas.datasets.SAT6Dataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": true,
+                    "num_workers": 4,
+                    "download": false,
+                    "mat_file": "./data/multi-class/SAT/sat-6-full.mat",
+					"csv_file": "./data/multi-class/SAT/train.csv",
+                    "transforms": ["aitlas.transforms.ResizeRandomCropFlipHVToTensor"],
+                    "mode": "train"
+                }
+            },
+            "val_dataset_config":{
+                  "classname": "aitlas.datasets.SAT6Dataset",
+                  "config": {
+                      "batch_size": 128,
+                      "shuffle": false,
+                      "num_workers": 4,
+                      "download": false,
+                      "mat_file": "./data/multi-class/SAT/sat-6-full.mat",
+					  "csv_file": "./data/multi-class/SAT/val.csv",					  
+                      "transforms": ["aitlas.transforms.ResizeCenterCropToTensor"],
+                      "mode": "train"
+                  }
+              }
+        }
+    }
+}
