@@ -1,0 +1,26 @@
+{
+    "model": {
+        "classname": "aitlas.models.AlexNet",
+        "config": {
+            "num_classes": 46,            
+            "metrics": ["accuracy", "precision", "recall", "f1_score"]
+        }
+    },
+    "task": {
+        "classname": "aitlas.tasks.EvaluateTask",
+        "config": {
+            "model_path": "./data/experiments/rsd46whu/alexnet/checkpoint.pth.tar",
+            "dataset_config": {
+                "classname": "aitlas.datasets.RSD46WHUDataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": false,
+                    "num_workers": 4,
+                    "data_dir": "./data/multi-class/RSD46-WHU/test",
+                    "csv_file": "./data/multi-class/RSD46-WHU/test/test.csv",
+                    "transforms": ["aitlas.transforms.ResizeCenterCropToTensor"]
+                }
+            }
+        }
+    }
+}
