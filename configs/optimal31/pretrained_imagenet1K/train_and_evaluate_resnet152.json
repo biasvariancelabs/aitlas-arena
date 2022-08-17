@@ -1,0 +1,42 @@
+{
+    "model": {
+        "classname": "aitlas.models.ResNet152",
+        "config": {
+            "num_classes": 31,
+            "learning_rate": 0.0001,
+            "pretrained": true,
+            "metrics": ["accuracy", "precision", "recall", "f1_score"]
+        }
+    },
+    "task": {
+        "classname": "aitlas.tasks.TrainAndEvaluateTask",
+        "config": {
+            "epochs": 100,
+            "model_directory": "./data/experiments/optimal31/pretrained",
+            "save_epochs": 50,
+            "id": "resnet152",
+            "train_dataset_config": {
+                "classname": "aitlas.datasets.Optimal31Dataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": true,
+                    "num_workers": 4,
+                    "data_dir": "./data/multi-class/Optimal31",
+                    "csv_file": "./data/multi-class/Optimal31/train.csv",
+					"transforms": ["aitlas.transforms.ResizeRandomCropFlipHVToTensor"]
+                }
+            },
+			"val_dataset_config": {
+                "classname": "aitlas.datasets.Optimal31Dataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": false,
+                    "num_workers": 4,
+                    "data_dir": "./data/multi-class/Optimal31",
+                    "csv_file": "./data/multi-class/Optimal31/val.csv",
+                    "transforms": ["aitlas.transforms.ResizeCenterCropToTensor"]
+                }
+            }
+        }
+    }
+}

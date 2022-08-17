@@ -1,0 +1,26 @@
+{
+    "model": {
+        "classname": "aitlas.models.ConvNeXtTiny",
+        "config": {
+            "num_classes": 31,            
+            "metrics": ["accuracy", "precision", "recall", "f1_score"]
+        }
+    },
+    "task": {
+        "classname": "aitlas.tasks.EvaluateTask",
+        "config": {
+            "model_path": "./data/experiments/optimal31/convnexttiny/checkpoint.pth.tar",
+            "dataset_config": {
+                "classname": "aitlas.datasets.Optimal31Dataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": false,
+                    "num_workers": 4,
+                    "data_dir": "./data/multi-class/Optimal31",
+                    "csv_file": "./data/multi-class/Optimal31/test.csv",
+                    "transforms": ["aitlas.transforms.ResizeCenterCropToTensor"]
+                }
+            }
+        }
+    }
+}
