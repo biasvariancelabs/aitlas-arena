@@ -1,0 +1,26 @@
+{
+    "model": {
+        "classname": "aitlas.models.VisionTransformer",
+        "config": {
+            "num_classes": 7,            
+            "metrics": ["accuracy", "precision", "recall", "f1_score"]
+        }
+    },
+    "task": {
+        "classname": "aitlas.tasks.EvaluateTask",
+        "config": {
+            "model_path": "./data/experiments/rsscn7/vision_transformer/checkpoint.pth.tar",
+            "dataset_config": {
+                "classname": "aitlas.datasets.RSSCN7Dataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": false,
+                    "num_workers": 4,
+                    "data_dir": "./data/multi-class/RSSCN7",
+                    "csv_file": "./data/multi-class/RSSCN7/test.csv",
+                    "transforms": ["aitlas.transforms.ResizeCenterCropToTensor"]
+                }
+            }
+        }
+    }
+}
