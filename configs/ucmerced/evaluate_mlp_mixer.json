@@ -1,0 +1,26 @@
+{
+    "model": {
+        "classname": "aitlas.models.MLPMixer",
+        "config": {
+            "num_classes": 21,            
+            "metrics": ["accuracy", "precision", "recall", "f1_score"]
+        }
+    },
+    "task": {
+        "classname": "aitlas.tasks.EvaluateTask",
+        "config": {
+            "model_path": "./data/experiments/ucmerced/mlp_mixer/checkpoint.pth.tar",
+            "dataset_config": {
+                "classname": "aitlas.datasets.UcMercedDataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": false,
+                    "num_workers": 4,
+                    "data_dir": "./data/multi-class/UCMerced",
+                    "csv_file": "./data/multi-class/UCMerced/test.csv",
+                    "transforms": ["aitlas.transforms.ResizeCenterCropToTensor"]
+                }
+            }
+        }
+    }
+}
