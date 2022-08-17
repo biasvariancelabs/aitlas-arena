@@ -1,0 +1,31 @@
+{
+    "model": {
+        "classname": "aitlas.models.DenseNet161MultiLabel",
+        "config": {
+            "num_classes": 43,          
+            "threshold": 0.5,					
+            "metrics": ["precision", "recall", "f1_score", "map"]
+        }
+    },
+    "task": {
+        "classname": "aitlas.tasks.EvaluateTask",
+        "config": {
+            "model_path": "./data/experiments/bigearthnet43/densenet161/checkpoint.pth.tar",
+            "dataset_config": {
+                "classname": "aitlas.datasets.BigEarthNetDataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": false,
+                    "num_workers": 4,
+                    "lmdb_path": "./data/BigEarthNet/lmdb",
+						"version": "43 labels",
+                        "import_to_lmdb": false,
+                        "csv_file": "./data/BigEarthNet/test.csv",
+                        "data_dir": "./data/BigEarthNet/BigEarthNet-v1.0/",
+                        "transforms": ["aitlas.transforms.ToTensorResizeCenterCrop"]
+
+                }
+            }
+        }
+    }
+}

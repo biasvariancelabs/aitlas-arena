@@ -1,0 +1,48 @@
+{
+    "model": {
+        "classname": "aitlas.models.VisionTransformerMultilabel",
+        "config": {
+            "num_classes": 43,
+            "learning_rate": 0.0001,
+            "pretrained": true,
+            "metrics": ["accuracy", "precision", "recall", "f1_score", "map"]
+        }
+    },
+    "task": {
+        "classname": "aitlas.tasks.TrainAndEvaluateTask",
+          "config": {
+              "epochs": 100,
+              "model_directory": "./data/experiments/bigearthnet43/pretrained",
+              "save_epochs": 50,
+              "id": "vision_transformer",
+              "train_dataset_config":{
+                  "classname": "aitlas.datasets.BigEarthNetDataset",
+                  "config": {
+                      "batch_size": 128,
+                      "shuffle": true,
+                      "num_workers": 8,
+                      "lmdb_path": "./data/BigEarthNet/lmdb",
+                      "import_to_lmdb": false,
+					  "version": "43 labels",
+                      "csv_file": "./data/BigEarthNet/train.csv",
+                      "data_dir": "./data/BigEarthNet/BigEarthNet-v1.0/",
+                      "transforms": ["aitlas.transforms.ToTensorResizeRandomCropFlipHV"]
+                  }
+              },
+              "val_dataset_config":{
+                    "classname": "aitlas.datasets.BigEarthNetDataset",
+                    "config": {
+                        "batch_size": 128,
+                        "shuffle": false,
+                        "num_workers": 8,
+                        "lmdb_path": "./data/BigEarthNet/lmdb",
+                        "import_to_lmdb": false,
+						"version": "43 labels",
+                        "csv_file": "./data/BigEarthNet/val.csv",
+                        "data_dir": "./data/BigEarthNet/BigEarthNet-v1.0/",
+                        "transforms": ["aitlas.transforms.ToTensorResizeCenterCrop"]
+                    }
+              }
+        }
+    }
+}
