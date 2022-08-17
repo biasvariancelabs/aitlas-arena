@@ -1,0 +1,43 @@
+{
+    "model": {
+        "classname": "aitlas.models.AlexNetMultiLabel",
+        "config": {
+            "num_classes": 8,
+            "learning_rate": 0.0001,
+            "pretrained": false,
+            "threshold": 0.5,
+            "metrics": ["accuracy", "precision", "recall", "f1_score", "map"]
+        }
+    },
+    "task": {
+        "classname": "aitlas.tasks.TrainAndEvaluateTask",
+        "config": {
+            "epochs": 100,
+            "model_directory": "./data/experiments/dfc15/scratch",
+            "save_epochs": 50,
+            "id": "alexnet",
+            "train_dataset_config": {
+                "classname": "aitlas.datasets.DFC15MultiLabelDataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": true,
+                    "num_workers": 4,
+                    "data_dir": "./data/DFC15/train/images",
+                    "csv_file": "./data/DFC15/train.csv",
+					"transforms": ["aitlas.transforms.ResizeRandomCropFlipHVToTensor"]
+                }
+            },
+			"val_dataset_config": {
+                "classname": "aitlas.datasets.DFC15MultiLabelDataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": false,
+                    "num_workers": 4,
+                    "data_dir": "./data/DFC15/train/images",
+                    "csv_file": "./data/DFC15/val.csv",
+                    "transforms": ["aitlas.transforms.ResizeCenterCropToTensor"]
+                }
+            }
+        }
+    }
+}
