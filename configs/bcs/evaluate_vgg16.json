@@ -1,0 +1,26 @@
+{
+    "model": {
+        "classname": "aitlas.models.VGG16",
+        "config": {
+            "num_classes": 2,            
+            "metrics": ["accuracy", "precision", "recall", "f1_score"]
+        }
+    },
+    "task": {
+        "classname": "aitlas.tasks.EvaluateTask",
+        "config": {
+            "model_path": "./data/experiments/bcs/vgg16/checkpoint.pth.tar",
+            "dataset_config": {
+                "classname": "aitlas.datasets.BrazilianCoffeeScenesDataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": false,
+                    "num_workers": 4,
+                    "data_dir": "./data/multi-class/BCS",
+                    "csv_file": "./data/multi-class/BCS/test.csv",
+                    "transforms": ["aitlas.transforms.ResizeCenterCropToTensor"]
+                }
+            }
+        }
+    }
+}
