@@ -1,0 +1,27 @@
+{
+    "model": {
+        "classname": "aitlas.models.ConvNeXtTinyMultiLabel",
+        "config": {
+            "num_classes": 60, 
+            "threshold": 0.5,		
+            "metrics": ["precision", "recall", "f1_score", "map"]
+        }
+    },
+    "task": {
+        "classname": "aitlas.tasks.EvaluateTask",
+        "config": {
+            "model_path": "./data/experiments/mlrsnet/convnexttiny/checkpoint.pth.tar",
+            "dataset_config": {
+                "classname": "aitlas.datasets.MLRSNetMultiLabelDataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": false,
+                    "num_workers": 4,
+                    "data_dir": "./data/MLRSNet/images",
+                    "csv_file": "./data/MLRSNet/test.csv",
+                    "transforms": ["aitlas.transforms.ResizeCenterCropToTensor"]
+                }
+            }
+        }
+    }
+}
