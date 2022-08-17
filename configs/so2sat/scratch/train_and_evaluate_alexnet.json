@@ -1,0 +1,40 @@
+{
+    "model": {
+        "classname": "aitlas.models.AlexNet",
+        "config": {
+            "num_classes": 17,
+            "learning_rate": 0.001,
+            "pretrained": false,
+            "metrics": ["accuracy", "precision", "recall", "f1_score"]
+        }
+    },
+    "task": {
+        "classname": "aitlas.tasks.TrainAndEvaluateTask",
+        "config": {
+            "epochs": 100,
+            "model_directory": "./data/experiments/so2sat/scratch",
+            "save_epochs": 50,
+            "id": "alexnet",
+            "train_dataset_config": {
+                "classname": "aitlas.datasets.So2SatDataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": true,
+                    "num_workers": 4,
+                    "h5_file": "./data/multi-class/So2Sat/training.h5",
+					"transforms": ["aitlas.transforms.ToTensorResizeRandomCropFlipHV"]
+                }
+            },
+			"val_dataset_config": {
+                "classname": "aitlas.datasets.So2SatDataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": false,
+                    "num_workers": 4,
+                    "h5_file": "./data/multi-class/So2Sat/validation.h5",
+                    "transforms": ["aitlas.transforms.ToTensorResizeCenterCrop"]
+                }
+            }
+        }
+    }
+}

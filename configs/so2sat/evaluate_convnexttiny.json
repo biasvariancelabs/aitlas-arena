@@ -1,0 +1,25 @@
+{
+    "model": {
+        "classname": "aitlas.models.ConvNeXtTiny",
+        "config": {
+            "num_classes": 17,            
+            "metrics": ["accuracy", "precision", "recall", "f1_score"]
+        }
+    },
+    "task": {
+        "classname": "aitlas.tasks.EvaluateTask",
+        "config": {
+            "model_path": "./data/experiments/so2sat/convnexttiny/checkpoint.pth.tar",
+            "dataset_config": {
+                "classname": "aitlas.datasets.So2SatDataset",
+                "config": {
+                    "batch_size": 128,
+                    "shuffle": false,
+                    "num_workers": 4,
+					"h5_file": "./data/multi-class/So2Sat/testing.h5",
+                    "transforms": ["aitlas.transforms.ToTensorResizeCenterCrop"]
+                }
+            }
+        }
+    }
+}
