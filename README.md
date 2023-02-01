@@ -68,266 +68,53 @@ You can obtain each dataset (with the respective splits) on the links below. If 
 
  ### Multi-class datasets
 
-*Top-1 Accuracy (model rank wrt dataset)
+*Top-1 Accuracy
 
-| **Dataset\Model** | **DenseNet161 (2.6)** | **ViT (2.73)** | **ResNet152 (3.27)** | **ResNet50 (4.07)** | **MLP Mixer (4.67)** | **ConvNeXt (4.8)** | **EfficientNetB0 (5.13)** | **VGG16 (7.67)** | **AlexNet (8.93)** |
-|-------------------|-----------------------|----------------|----------------------|---------------------|----------------------|--------------------|---------------------------|------------------|--------------------|
-| **WHU-RS19**      | 100 (1)               | 99.502 (2)     | 98.01 (8)            | 99.502 (2)          | 98.507 (7)           | 99.005 (5)         | 99.502 (2)                | 99.005 (5)       | 93.532 (9)         |
-| **Optimal31**     | 94.355 (2)            | 94.624 (1)     | 92.473 (5)           | 92.204 (6)          | 92.742 (4)           | 93.011 (3)         | 91.667 (7)                | 88.71 (8)        | 80.914 (9)         |
-| **UC merced**     | 98.333 (4)            | 98.333 (4)     | 98.81 (1)            | 98.571 (2)          | 98.333 (4)           | 97.857 (7)         | 98.571 (2)                | 95.476 (8)       | 92.143 (9)         |
-| **SIRI-WHU**      | 95.625 (3)            | 95.625 (3)     | 96.25 (1)            | 95 (6)              | 95.208 (5)           | 96.25 (1)          | 95 (6)                    | 93.958 (8)       | 92.292 (9)         |
-| **RSSCN7**        | 94.821 (6)            | 95.893 (1)     | 95 (4)               | 95 (4)              | 95.179 (3)           | 94.643 (7)         | 95.536 (2)                | 93.929 (8)       | 91.964 (9)         |
-| **BCS**           | 92.708 (2)            | 92.014 (4)     | 92.361 (3)           | 92.014 (4)          | 93.056 (1)           | 91.493 (6)         | 91.319 (7)                | 90.972 (8)       | 89.583 (9)         |
-| **AID**           | 97.25 (2)             | 97.75 (1)      | 97.2 (3)             | 96.55 (6)           | 96.7 (5)             | 96.95 (4)          | 96.25 (7)                 | 96.1 (8)         | 92.9 (9)           |
-| **CLRS**          | 92.2 (2)              | 93.2 (1)       | 91.9 (3)             | 91.567 (4)          | 90.1 (7)             | 91.1 (5)           | 90.5 (6)                  | 89.9 (8)         | 84.1 (9)           |
-| **RSI-CB256**     | 99.737 (3)            | 99.758 (2)     | 99.859 (1)           | 99.677 (5)          | 99.657 (6)           | 99.596 (7)         | 99.717 (4)                | 99.051 (9)       | 99.354 (8)         |
-| **Eurosat**       | 98.889 (3)            | 98.722 (7)     | 99 (1)               | 98.833 (4)          | 98.741 (6)           | 98.778 (5)         | 98.907 (2)                | 98.148 (8)       | 97.574 (9)         |
-| **PatternNet**    | 99.737 (1)            | 99.655 (5)     | 99.49 (7)            | 99.737 (1)          | 99.704 (3)           | 99.671 (4)         | 99.539 (6)                | 99.424 (8)       | 99.161 (9)         |
-| **RESISC45**      | 96.508 (3)            | 97.079 (1)     | 96.54 (2)            | 96.46 (4)           | 95.952 (6)           | 96.27 (5)          | 94.873 (7)                | 93.905 (8)       | 90.492 (9)         |
-| **RSD46-WHU**     | 94.507 (1)            | 94.238 (3)     | 94.404 (2)           | 94.158 (4)          | 93.673 (5)           | 93.627 (6)         | 93.387 (7)                | 92.422 (8)       | 90.646 (9)         |
-| **So2Sat**        | 65.756 (5)            | 68.551 (1)     | 65.169 (7)           | 61.903 (8)          | 67.066 (2)           | 66.169 (3)         | 65.801 (4)                | 65.375 (6)       | 59.203 (9)         |
-| **SAT6**          | 100 (1)               | 99.998 (5)     | 100 (1)              | 100 (1)             | 99.995 (6)           | 99.999 (4)         | 99.988 (8)                | 99.993 (7)       | 99.98 (9)          |
+| **Dataset\Model**| **AlexNet** | **VGG16** | **ResNet50**    | **ResNet152**   | **DenseNet161** | **EfficientNetB0** | **ViT**         | **MLPMixer** | **ConvNeXt**   | **SwinT**       |
+|----------------------------------|-------------|-----------|-----------------|-----------------|-----------------|--------------------|-----------------|--------------|----------------|-----------------|
+| WHU-RS19                         | 93.532      | 99.005    | 99.502          | 98.01           | **100**    | 99.502             | 99.502          | 98.507       | 99.005         | 99.502          |
+| Optimal31                        | 80.914      | 88.71     | 92.204          | 92.473          | 94.355          | 91.667             | **94.624** | 92.742       | 93.011         | 92.473          |
+| UC Merced                        | 92.143      | 95.476    | 98.571          | **98.810** | 98.333          | 98.571             | 98.333          | 98.333       | 97.857         | 98.571          |
+| SIRI-WHU                         | 92.292      | 93.958    | 95              | **96.25**  | 95.625          | 95                 | 95.625          | 95.208       | **96.25** | 95.625          |
+| RSSCN7                           | 91.964      | 93.929    | 95              | 95              | 94.821          | 95.536             | **95.893** | 95.179       | 94.643         | 95.179          |
+| BCS                              | 89.583      | 90.972    | 92.014          | 92.361          | 92.708          | 91.319             | 92.014          | 93.056       | 91.493         | **93.403** |
+| AID                              | 92.9        | 96.1      | 96.55           | 97.2            | 97.25           | 96.25              | **97.750** | 96.7         | 96.95          | 97.4            |
+| CLRS                             | 84.1        | 89.9      | 91.567          | 91.9            | 92.2            | 90.5               | **93.200** | 90.1         | 91.1           | 92.533          |
+| RSI-CB256                        | 99.354      | 99.051    | 99.677          | **99.859** | 99.737          | 99.717             | 99.758          | 99.657       | 99.596         | 99.677          |
+| Eurosat                          | 97.574      | 98.148    | 98.833          | **99**     | 98.889          | 98.907             | 98.722          | 98.741       | 98.778         | 98.944          |
+| PatternNet                       | 99.161      | 99.424    | **99.737** | 99.49           | **99.737** | 99.539             | 99.655          | 99.704       | 99.671         | 99.688          |
+| RESISC45                         | 90.492      | 93.905    | 96.46           | 96.54           | 96.508          | 94.873             | **97.079** | 95.952       | 96.27          | 96.587          |
+| RSD46-WHU                        | 90.646      | 92.422    | 94.158          | 94.404          | **94.507** | 93.387             | 94.238          | 93.673       | 93.627         | 93.536          |
+| So2Sat                           | 59.203      | 65.375    | 61.903          | 65.169          | 65.756          | 65.801             | **68.551** | 67.066       | 66.169         | 65.950          |
+| SAT6                             | 99.98       | 99.993    | **100**    | **100**    | **100**    | 99.988             | 99.998          | 99.995       | 99.999         | 99.999          |
 
 ### Multi-label datasets
 
-*Mean Average Precision mAP (model rank wrt dataset)
-| **Dataset\Model**  | **ConvNeXt (3.14)** | **ViT (3.71)** | **DenseNet161 (3.86)** | **ResNet50 (4)** | **ResNet152 (4.29)** | **MLP Mixer (4.57)** | **EfficientNetB0 (5.71)** | **VGG16 (6.71)** | **AlexNet (8.86)** |
-|--------------------|---------------------|----------------|------------------------|------------------|----------------------|----------------------|---------------------------|------------------|--------------------|
-| **AID (mlc)**            | 82.298 (1)          | 81.539 (3)     | 81.708 (2)             | 80.758 (6)       | 80.942 (4)           | 80.879 (5)           | 78.002 (8)                | 79.893 (7)       | 75.906 (9)         |
-| **UC Merced (mlc)**      | 96.431 (2)          | 96.699 (1)     | 96.056 (4)             | 95.665 (6)       | 96.01 (5)            | 96.34 (3)            | 95.384 (7)                | 92.848 (8)       | 92.638 (9)         |
-| **DFC15**          | 97.994 (1)          | 97.617 (4)     | 97.529 (6)             | 97.662 (3)       | 97.6 (5)             | 97.941 (2)           | 96.787 (7)                | 96.566 (8)       | 94.057 (9)         |
-| **Planet UAS**     | 66.447 (5)          | 66.804 (2)     | 66.339 (3)             | 65.528 (4)       | 64.825 (1)           | 67.33 (7)            | 64.157 (6)                | 65.584 (8)       | 64.048 (9)         |
-| **MLRSNet**        | 95.807 (3)          | 96.41 (2)      | 96.306 (4)             | 96.272 (6)       | 96.432 (7)           | 95.049 (1)           | 95.391 (8)                | 94.633 (5)       | 93.399 (9)         |
-| **BigEarthNet 43** | 66.166 (2)          | 58.997 (8)     | 64.229 (4)             | 66.256 (1)       | 64.066 (5)           | 59.648 (7)           | 64.589 (3)                | 61.205 (6)       | 58.554 (9)         |
-| **BigEarthNet 19** | 77.147 (8)          | 77.31 (6)      | 79.686 (4)             | 79.983 (2)       | 79.776 (3)           | 77.288 (7)           | 80.221 (1)                | 78.418 (5)       | 77.147 (8)         |
-
+*Mean Average Precision mAP 
+| **Dataset\Model** | **AlexNet** | **VGG16** | **ResNet50** | **ResNet152** | **DenseNet161** | **EfficientNetB0** | **ViT** | **MLPMixer** | **ConvNeXt**    | **SwinT**       |
+|---------------------------------|-------------|-----------|--------------|---------------|-----------------|--------------------|---------|--------------|-----------------|-----------------|
+| AID (mlc)                       | 75.906      | 79.893    | 80.758       | 80.942        | 81.708          | 78.002             | 81.539  | 80.879       | **82.298** | 82.254          |
+| UC Merced (mlc)                 | 92.638      | 92.848    | 95.665       | 96.01         | 96.056          | 95.384             | 96.699  | 96.34        | 96.431          | **96.831** |
+| DFC15                           | 94.057      | 96.566    | 97.662       | 97.6          | 97.529          | 96.787             | 97.617  | 97.941       | 97.994          | **98.111** |
+| Planet UAS                      | 64.048      | 65.584    | 65.528       | 64.825        | 66.339          | 64.157             | 66.804  | 67.330       | 66.447          | **67.837** |
+| MLRSNet                         | 93.399      | 94.633    | 96.272       | 96.432        | 96.306          | 95.391             | 96.41   | 95.049       | 95.807          | **96.620** |
+| BigEarthNet 19                  | 77.147      | 78.418    | 79.983       | 79.776        | 79.686          | 80.221             | 77.31   | 77.288       | 80.283          | **81.384** |
+| BigEarthNet 43                  | 58.554      | 61.205    | 66.256       | 64.066        | 64.229          | 64.589             | 58.997  | 59.648       | 66.166          | **67.733** |
 # Models
 
 All trained models are available **[here](https://drive.google.com/drive/folders/1lTnPsMyyLv9XoPu3cMmE_h6NPkj_WCH8?usp=sharing)**.
 
 ## Model list 
+| Model          | from scratch         | pretrained [ImageNet1K] |
+|----------------|----------------------|-------------------------|
+| AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| Vision Transformer            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| Swin Transformer            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
 
-<table>
-<tr><th> Multi-class classification tasks</th><th> Multi-label classification tasks</th></tr>
-<tr><td>
-
-
-
-
-| Dataset        | Model          | from scratch         | pretrained [ImageNet1K] |
-|----------------|----------------|----------------------|-------------------------|
-| AID            | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| BCS            | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| CLRS           | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| Eurosat        | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| Optimal31      | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| PatternNet     | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| RESISC45       | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| RSD46-WHU      | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-
-
-
-</td><td>
-
-| Dataset        | Model          | from scratch         | pretrained [ImageNet1K] |
-|----------------|----------------|----------------------|-------------------------|
-| RSI-CB256      | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| RSSCN7         | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| SAT6           | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| SIRI-WHU       | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| So2Sat         | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| UCMerced       | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| WHU-RS19       | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-
-
-</td></tr> </table>
-
-
-
-### Multi-label classification tasks
-
-| Dataset        | Model          | from scratch         | pretrained [ImageNet1K] |
-|----------------|----------------|----------------------|-------------------------|
-| AID (mlc)      | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| BigEarthNet19  | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| BigEarthNet43  | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| DFC15          | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| MLRSNet        | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| PlanetUAS      | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| UCMerced (mlc) | AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ViT            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-|                | ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
