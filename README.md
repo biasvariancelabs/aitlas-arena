@@ -105,16 +105,16 @@ You can obtain each dataset (with the respective splits) on the links below. If 
 All trained models are available **[here](https://drive.google.com/drive/folders/1lTnPsMyyLv9XoPu3cMmE_h6NPkj_WCH8?usp=sharing)**.
 
 ## Model list 
-| Model          | from scratch         | pretrained [ImageNet1K] |
-|----------------|----------------------|-------------------------|
-| AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| Vision Transformer            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    |
-| Swin Transformer            | :heavy\_check\_mark: | :heavy\_check\_mark:    |
+| Model          | from scratch         | pretrained [ImageNet1K] | config files          | logs                 |
+|----------------|----------------------|-------------------------|----------------------|----------------------|
+| AlexNet        | :heavy\_check\_mark: | :heavy\_check\_mark:    | :heavy\_check\_mark: | :heavy\_check\_mark: |
+| VGG16          | :heavy\_check\_mark: | :heavy\_check\_mark:    | :heavy\_check\_mark: | :heavy\_check\_mark: |
+| ResNet50       | :heavy\_check\_mark: | :heavy\_check\_mark:    | :heavy\_check\_mark: | :heavy\_check\_mark: |
+| ResNet152      | :heavy\_check\_mark: | :heavy\_check\_mark:    | :heavy\_check\_mark: | :heavy\_check\_mark: |
+| DenseNet161    | :heavy\_check\_mark: | :heavy\_check\_mark:    | :heavy\_check\_mark: | :heavy\_check\_mark: |
+| EfficientNetB0 | :heavy\_check\_mark: | :heavy\_check\_mark:    | :heavy\_check\_mark: | :heavy\_check\_mark: |
+| Vision Transformer | :heavy\_check\_mark: | :heavy\_check\_mark:    | :heavy\_check\_mark: | :heavy\_check\_mark: |
+| MLPMixer       | :heavy\_check\_mark: | :heavy\_check\_mark:    | :heavy\_check\_mark: | :heavy\_check\_mark: |
+| ConvNeXt       | :heavy\_check\_mark: | :heavy\_check\_mark:    | :heavy\_check\_mark: | :heavy\_check\_mark: |
+| Swin Transformer  | :heavy\_check\_mark: | :heavy\_check\_mark:    | :heavy\_check\_mark: | :heavy\_check\_mark: |
 
