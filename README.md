@@ -13,7 +13,7 @@ For furhter details, please refer to our paper *[Current Trends in Deep Learning
 
 
 # Citation
-For attribution in academic contexts, please cite this **[work](https://arxiv.org/abs/2207.07189)** as
+For attribution in academic contexts, please cite this **[work](https://www.sciencedirect.com/science/article/pii/S0924271623000205)** as
 ```
 @article{aitlas_arena2022,
       title={{Current Trends in Deep Learning for Earth Observation:An Open-source Benchmark Arena for Image Classification}}, 
