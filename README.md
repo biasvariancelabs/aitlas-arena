@@ -30,7 +30,7 @@ For attribution in academic contexts, please cite this **[work](https://www.scie
 
 # Datasets
 
-You can obtain each dataset (with the respective splits) on the links below. If you use these datasets please cite the original authors accordingly. The references are provided in Tables 1 and 2 in our **[paper](https://arxiv.org/abs/2207.07189)**. You can find more details about each dataset in the supplementary material of the paper as well as on our [AiTLAS Semantic Data Catalog](http://eodata.bvlabs.ai/).
+You can obtain each dataset (with the respective splits) on the links below. If you use these datasets please cite the original authors accordingly. The references are provided in Tables 1 and 2 in our **[paper](https://www.sciencedirect.com/science/article/pii/S0924271623000205)**. You can find more details about each dataset in the supplementary material of the paper as well as on our [AiTLAS Semantic Data Catalog](http://eodata.bvlabs.ai/).
 
 ### Multi-class datasets
 |Dataset| Data source | Data Splits |||
